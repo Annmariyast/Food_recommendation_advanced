@@ -24,7 +24,7 @@ It leverages:
    cd Food_recommendation_advanced
 
 
-##NLP Model for Food Extraction
+## NLP Model for Food Extraction
 1. spaCy (Rule-based + Named Entity Recognition)
 Custom pattern matcher for identifying food items in free-text input.
 2. Voice-to-Text Model
