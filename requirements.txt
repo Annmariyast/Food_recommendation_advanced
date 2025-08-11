@@ -1,0 +1,14 @@
+streamlit>=1.32
+pandas>=2.0
+numpy>=1.24
+pillow>=9.5
+spacy>=3.7
+SpeechRecognition>=3.10
+pydub>=0.25
+protobuf<5
+tensorflow-macos>=2.14; platform_system=="Darwin"
+# For Apple Silicon, user may need `tensorflow-metal` during local setup
+watchdog; platform_system=="Darwin"
+tensorflow-datasets>=4.9
+streamlit-mic-recorder>=0.0.8
+gTTS>=2.5

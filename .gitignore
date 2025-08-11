@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+food/
+.venv/
+venv/
+ENV/
+.DS_Store
+.streamlit/
+.ipynb_checkpoints/
