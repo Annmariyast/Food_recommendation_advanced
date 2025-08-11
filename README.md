@@ -23,3 +23,17 @@ It leverages:
    git clone https://github.com/Annmariyast/Food_recommendation_advanced.git
    cd Food_recommendation_advanced
 
+
+##NLP Model for Food Extraction
+1. spaCy (Rule-based + Named Entity Recognition)
+Custom pattern matcher for identifying food items in free-text input.
+2. Voice-to-Text Model
+SpeechRecognition library (using Google Web Speech API or compatible engine)
+Converts spoken food names into text before NLP processing.
+3. Rule-Based Recommendation Engine
+Dataset-driven filtering (no machine learning model)
+Matches extracted food items against disease-specific “safe” and “unsafe” lists in your CSV dataset.
+4. Streamlit Front-End Logic
+Handles user input, runs the NLP/voice pipeline, and displays results.
+
+So technically, this system doesn’t train deep learning models — instead, it uses pre-trained NLP and speech recognition models combined with a custom rule-based recommendation engine.
