@@ -1,18 +1,25 @@
 # Food Recommendation Advanced (Healthy Food Intake Monitor)
-## Overview
-**Food Recommendation Advanced** is a Python-based application designed to support healthier eating by offering personalized food suggestions based on dietary restrictions, health conditions, or user preferences. It leverages a structured dataset and a simple recommendation engine to guide users toward better nutritional choices.
-## Project Structure
-Food_recommendation_advanced/
-├── app.py                    # Main application entry point
-├── utils/                    # Helper modules (e.g., data processing, recommendation logic)
-├── Diseases_Foods_Dataset_Real.csv  # Dataset mapping diseases to recommended foods
-├── sample.jpg                # Sample image (e.g., UI screenshot or dataset preview)
-├── requirements.txt          # Project dependencies
-└── README.md                 # Project documentation
-## Features
-- Disease-specific healthy food recommendations.
-- CSV-based disease-to-food mapping.
-- Easy-to-use Python application, extendable to web or GUI.
-- Modular design with utility functions in `utils/`.
 
+## Overview
+**Food Recommendation Advanced** is a Python-based application designed to support healthier eating by offering personalized food suggestions based on dietary restrictions, health conditions, or user preferences.  
+It leverages:
+- A **structured dataset** mapping diseases to recommended foods.
+- **Natural Language Processing (NLP)** to understand free-text input.
+- **Voice-to-Text** input so users can speak their requests instead of typing.
+- A simple recommendation engine to provide relevant suggestions.
+
+
+## Features
+- **Disease-specific healthy food recommendations.**
+- **Voice-to-Text input** for hands-free usage.
+- **Text-based input** (free-form natural language queries).
+- **Image classification** for food recognition (CNN model).
+- CSV-based disease-to-food mapping.
+- Modular design for easy extension.
+
+## Installation
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Annmariyast/Food_recommendation_advanced.git
+   cd Food_recommendation_advanced
 
