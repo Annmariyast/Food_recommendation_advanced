@@ -12,3 +12,4 @@ watchdog; platform_system=="Darwin"
 tensorflow-datasets>=4.9
 streamlit-mic-recorder>=0.0.8
 gTTS>=2.5
+scikit-learn>=1.4

@@ -172,3 +172,17 @@ elif st.session_state.get('disease_text') and food_items:
         st.markdown("---")
 else:
     st.info("Please provide both disease and food inputs.")
+
+# Evaluation section
+with st.expander("Evaluate recommender (precision/recall/accuracy)"):
+    from utils.evaluate import evaluate_recommender
+    if df is not None and _dataset_load_error is None:
+        if st.button("Run evaluation", type="secondary"):
+            metrics = evaluate_recommender(df, get_recommendations)
+            st.write({
+                "accuracy": round(metrics["accuracy"], 4),
+                "precision": round(metrics["precision"], 4),
+                "recall": round(metrics["recall"], 4),
+                "f1": round(metrics["f1"], 4),
+                "support": metrics["support"],
+            })
